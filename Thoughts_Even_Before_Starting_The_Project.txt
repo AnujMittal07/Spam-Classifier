@@ -1,0 +1,17 @@
+                 SOME THOUGHTS THAT I HAVE BEFORE EVEN STARTING THE PROJECT AND LOOKING INTO THE DATASET
+
+1) Classification Problem: Spam or No spam
+
+2) It will be text based classification problem. Naive Bayes may set a good benchmark. Trees may not be a good algo as we will        have too many features.
+
+2) Imbalanced dataset: Most of the emails will not be spam
+   Upsampling or downsampling techniques may have to be used
+   
+3) Metric: Accuracy can't be most useful as we have imbalanced dataset. AUC might be good.
+           It might not be that bad if I classify a spam as not spam, but it would be a blunder to classify a not spam as spam.
+           So we have to reduce False Positives as much as we can even if that costs a little increase in False Negatives i.e
+           Have higher and higher PRECISION even if it results in a bit of decrease in RECALL
+          
+4) Interpretability: This might be important if you have to explain the management why and how you have classified something as                        spam or not spam. NB, Log Reg, Trees have good inbuilt feature importance.
+
+5) Latency: This might not be a very big issue if your model can come up with a result in around 30-45 seconds.
